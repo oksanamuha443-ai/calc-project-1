@@ -1,11 +1,11 @@
 /* Общие стили */
 :root {
-  --primary-color: #4a90e2;
-  --primary-hover: #357abd;
-  --bg-color: #bc18ff; /* фиолетовый фон */
-  --card-bg: #ffffff;
-  --text-color: #333;
-  --error-color: #d9534f;
+  --primary-color: #7b2cbf;       /* приглушённый фиолетовый для кнопок */
+  --primary-hover: #5e1f9a;       /* чуть темнее при наведении */
+  --bg-color: #bc18ff;           /* твой фиолетовый фон */
+  --card-bg: rgba(255, 255, 255, 0.85); /* полупрозрачные карточки */
+  --text-color: #222;            /* тёмный текст для контраста */
+  --error-color: #d9534f;        /* цвет ошибок без изменений */
 }
 
 body {
@@ -46,6 +46,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .error {
@@ -74,7 +75,7 @@ button:hover, .btn:hover {
   padding: 1rem;
   background: var(--card-bg);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hidden {
@@ -93,7 +94,7 @@ button:hover, .btn:hover {
 
 #journal-list li {
   background: var(--card-bg);
-  border: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 6px;
@@ -114,5 +115,4 @@ button:hover, .btn:hover {
     padding: 1.5rem 1rem;
   }
 }
-
 
