@@ -3,7 +3,7 @@
 :root {
   --primary-color: #4a90e2;
   --primary-hover: #357abd;
-  --bg-color: #f5f7fa;
+  --bg-color: #bc18ff; /* фиолетовый фон */
   --card-bg: #ffffff;
   --text-color: #333;
   --error-color: #d9534f;
@@ -93,7 +93,7 @@ button:hover, .btn:hover {
 }
 
 #journal-list li {
-  background: white;
+  background: var(--card-bg);
   border: 1px solid #ddd;
   padding: 1rem;
   margin-bottom: 0.5rem;
