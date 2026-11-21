@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор расхода плитки</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Калькулятор расхода плитки</h1>
+    <p>Рассчитайте количество плитки и запас на подрезку</p>
+  </header>
+
+  <main class="container">
+    <form id="calculator-form">
+      <div class="form-group">
+        <label for="area">Площадь помещения (м²)</label>
+        <input type="text" id="area" placeholder="Например: 15" required />
+        <span class="error" id="area-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="tile-size">Размер одной плитки (м)</label>
+        <input type="text" id="tile-size" placeholder="Например: 0.3" required />
+        <span class="error" id="tile-size-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="waste">Запас на подрезку (%)</label>
+        <input type="text" id="waste" placeholder="Например: 10" required />
+        <span class="error" id="waste-error"></span>
+      </div>
+
+      <button type="submit" id="calculate-btn">Рассчитать</button>
+    </form>
+
+    <section id="result-section" class="hidden">
+      <h2>Результат расчёта</h2>
+      <p>Необходимо плитки: <strong id="total-tiles">0</strong> шт.</p>
+      <p>С учётом запаса: <strong id="with-waste">0</strong> шт.</p>
+    </section>
+
+    <section class="journal-section">
+      <h2>Журнал запросов</h2>
+      <button id="clear-journal-btn">Очистить журнал</button>
+      <ul id="journal-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Калькулятор расхода плитки. Для учебных целей.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
